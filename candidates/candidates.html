@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./candidates.css">
+    <link rel="stylesheet" href="../global.css">
+    <title>Kandidater</title>
+</head>
+<body>
+<nav id="nav-bar"></nav>
+
+<div class="table-div">
+    <table id="myTable1">
+        <caption><h2>Kandidater</h2></caption>
+        <thead>
+        <tr>
+            <th onclick="sortTable(0)">Kandidat navn</th>
+            <th onclick="sortTable(1)">Parti</th>
+            <th class="hover-th" id="new-candidate-button">➕ Ny Kandidat</th>
+        </tr>
+        </thead>
+        <tbody id="candidate-tbdoy"></tbody>
+    </table>
+</div>
+
+<div id="new-candidate-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <br>
+        <h3>Opret Kandidat</h3>
+
+        <label for="new-candidate-name">Kandidatens navn</label><input type="text" id="new-candidate-name">
+        <label for="new-candidate-party">Kandidatens parti</label><select id="new-candidate-party" name="party"></select>
+        <button id="new-candidate-submit" class="button1">Opret ansat</button>
+    </div>
+</div>
+
+
+<script src="../global.js"></script>
+<script src="candidates.js"></script>
+</body>
+</html>

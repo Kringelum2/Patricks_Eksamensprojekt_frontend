@@ -1,0 +1,135 @@
+#nav-bar {
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+}
+
+#nav-bar .end {
+    width: 18.75rem;
+}
+
+#nav-bar a {
+    text-decoration: none;
+}
+
+#nav-bar div {
+    display: flex;
+}
+
+#nav-bar p {
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
+    text-decoration: none;
+
+}
+
+/*With help from https://stackoverflow.com/questions/7849112/css-how-to-add-round-corners-when-hover-li-element/7849193*/
+#nav-bar p:hover {
+    background-color: mintcream;
+    cursor: pointer;
+    color: darkorange;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#nav-bar h3, h4 {
+    color: white;
+}
+
+.middle {
+    margin: auto;
+}
+
+.table-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.table-div table {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    font-family: "Muli", sans-serif;
+}
+
+.table-div td {
+    word-wrap: break-word;
+    max-width: 15rem;
+    text-align: center;
+    padding: 0.1rem 0.5rem 0 0.5rem;
+
+}
+
+.table-div tr {
+    border-bottom: 2px white;
+}
+
+.table-div tbody tr:hover {
+    background-color: #cbcbcb;
+}
+
+.table-div th {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+table caption {
+    text-align: left;
+}
+
+thead {
+    background-color: darkorange;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    z-index: 1;
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    width: 13rem;
+    padding: 0 15px 15px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.39);
+    border-radius: 10px;
+}
+
+.modal-content h3 {
+    margin: 0 0 8px 0;
+}
+
+.modal-content input, .modal-content select {
+    margin-bottom: 8px;
+}
+
+h2, h3 {
+    margin: 0.5rem 0 0 0;
+    padding-top: 1rem;
+    white-space: nowrap;
+}
+
+button:hover {
+    cursor: pointer;
+}

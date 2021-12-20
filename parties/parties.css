@@ -1,0 +1,4 @@
+/* Made with help from https://css-tricks.com/how-nth-child-works/ so i can sort the table by percent */
+#myTable1 td:nth-child(3n+3)::after {
+    content: "%";
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./parties.css">
+    <link rel="stylesheet" href="../global.css">
+    <title>Partier</title>
+</head>
+<body>
+<nav id="nav-bar"></nav>
+
+<div class="table-div">
+    <table id="myTable1">
+        <caption><h2>Partiers kommunalvalgs resultater</h2></caption>
+        <thead>
+        <tr>
+            <th onclick="sortTable(0, false)">Parti</th>
+            <th onclick="sortTable(1, true)">Antal Stemmer</th>
+            <th onclick="sortTable(2, true)">Stemmer i procent</th>
+        </tr>
+        </thead>
+        <tbody id="party-tbody"></tbody>
+    </table>
+</div>
+
+
+<script src="../global.js"></script>
+<script src="../parties/parties.js"></script>
+</body>
+</html>
